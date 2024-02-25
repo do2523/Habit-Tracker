@@ -116,4 +116,9 @@
     flex-direction: row;
   }
 
-  
+  .delete {
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
