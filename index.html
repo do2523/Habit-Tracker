@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>HabitHack</title>
+  </head>
+  <body>
+    <div class="container">
+    <h2>Habit Entry</h2>
+      <p></p>
+      <form class="add-habit">
+        <input
+          class="habit"
+          type="text"
+          name="habit"
+          placeholder="Enter Habit Name"
+          required
+        />
+        <input
+          type="number"
+          name="reps"
+          placeholder="# of Repetitions"
+          min="1"
+          required
+        />
+        <div class="frequency">
+          <label for="timeframe">Frequency: </label>
+          <select name="timeframe" id="timeframe">
+            <option value="Daily">Daily</option>
+            <option value="Weekly">Weekly</option>
+            <option value="Monthly">Monthly</option>
+            <option value="Yearly">Yearly</option>
+          </select>
+        </div>
+        <input type="submit" value="+ Add Habit" />
+      </form>
+
+      <ul class="habits">
+        <li>Loading...</li>
+      </ul>
+    </div>
+
+    <!-- h -->
+    <div class="wrapper">
+        <div class="container">
+          <div class="button-container">
+            <button id="favourite"><i class="fa-regular fa-heart"></i></button>
+            <button id="show-list">
+              <i class="fa-solid fa-list"></i>
+            </button>
+            <button id="copy"><i class="fa-solid fa-copy"></i></button>
+          </div>
+          <p id="quote">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+            magni.
+          </p>
+          <h3 id="author">Lorem, ipsum.</h3>
+          <button id="btn">Generate</button>
+        </div>
+      </div>
+      <div class="favorite-container">
+        <h3>Favorite Quotes</h3>
+        <ul id="list-of-favourite-quotes"></ul>
+        <button id="clear-button">Clear</button>
+        <button id="close-favorite">Close</button>
+      </div>
+    
+      <script src="./motivation.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
